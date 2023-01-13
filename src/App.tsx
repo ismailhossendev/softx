@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import AllEmployee from './pages/AllEmployee';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         },
         {
           path: "/employee",
-          element: <div>employee</div>
+          element: <AllEmployee />
         },
         {
           path: "/application",

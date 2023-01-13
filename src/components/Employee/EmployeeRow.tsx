@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmployeeTd = () => {
+const EmployeeRow = () => {
     return (
         <tr>
 
@@ -21,10 +21,24 @@ const EmployeeTd = () => {
                 Marketing
             </td>
             <td>
-                <span className="badge badge-ghost badge-lg">Intern</span>
+                <select className='select'>
+                    <option value="1">
+                        <span className="badge badge-ghost badge-lg">Intern</span>
+                    </option>
+                    <option value="2">
+                        <span className="badge badge-ghost badge-lg">Contract</span>
+                    </option>
+                    <option value="3">
+                        <span className="badge badge-ghost badge-lg">Permanent</span>
+                    </option>
+                </select>
+
+            </td>
+            <td>
+                <button className='btn btn-sm'>Remove</button>
             </td>
         </tr>
     );
 };
 
-export default EmployeeTd;
+export default EmployeeRow;
