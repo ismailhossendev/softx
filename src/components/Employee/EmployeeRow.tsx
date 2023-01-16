@@ -21,7 +21,7 @@ const EmployeeRow = () => {
                 Marketing
             </td>
             <td>
-                <select className='select'>
+                <select className='select -ml-4'>
                     <option value="1">
                         <span className="badge badge-ghost badge-lg">Intern</span>
                     </option>
@@ -35,7 +35,7 @@ const EmployeeRow = () => {
 
             </td>
             <td>
-                <button className='btn btn-sm'>Remove</button>
+                <button className='btn btn-sm -ml-1'>Remove</button>
             </td>
         </tr>
     );

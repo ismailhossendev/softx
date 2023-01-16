@@ -4,6 +4,7 @@ import './App.css';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import AllEmployee from './pages/AllEmployee';
+import AddEmployee from './AddEmployee/AddEmployee';
 
 
 function App() {
@@ -26,10 +27,7 @@ function App() {
         },
         {
           path: "/add-employee",
-          element: <div>employee</div>
-        },
-        {
-
+          element: <AddEmployee />
         }
       ]
     }
