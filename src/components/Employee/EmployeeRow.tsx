@@ -32,7 +32,15 @@ const EmployeeRow = () => {
                         <span className="badge badge-ghost badge-lg">Permanent</span>
                     </option>
                 </select>
-
+            </td>
+            <td>
+                <select className='select text-black w-full -ml-4' id="position">
+                    <option>Marketing Manager</option>
+                    <option value="">Web Developer</option>
+                    <option value="">Junior Front-end Developer</option>
+                    <option value="">Accountant</option>
+                    <option value="">HR Manager</option>
+                </select>
             </td>
             <td>
                 <button className='btn btn-sm -ml-1'>Remove</button>

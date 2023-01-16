@@ -1,13 +1,13 @@
 import React from 'react';
 
 const AddEmployee = () => {
-    const inputClass = "w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900"
+    const inputClass = "w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900"
     return (
         <div>
             <h1 className='text-[20px] font-bold pb-3'>Add Employees</h1>
-            <section className="p-6 dark:bg-gray-800 dark:text-gray-50">
+            <section className="p-6  text-gray-900 border rounded">
                 <form noValidate className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
-                    <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-900">
+                    <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50">
                         <div className="space-y-2 col-span-full lg:col-span-1">
                             <p className="font-medium">Personal Inormation</p>
                             <p className="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fuga autem eum!</p>
@@ -43,7 +43,7 @@ const AddEmployee = () => {
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-900">
+                    <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm ">
                         <div className="space-y-2 col-span-full lg:col-span-1">
                             <p className="font-medium">Profile</p>
                             <p className="text-xs">Adipisci fuga autem eum!</p>
@@ -54,18 +54,41 @@ const AddEmployee = () => {
                                 <input id="username" type="text" placeholder="Username" className={inputClass} />
                             </div>
                             <div className="col-span-full sm:col-span-3">
-                                <label htmlFor="website" className="text-sm">Website</label>
-                                <input id="website" type="text" placeholder="https://" className={inputClass} />
+                                <label htmlFor="website" className="text-sm">Password</label>
+                                <input id="website" type="password" placeholder="******" className={inputClass} />
                             </div>
-                            <div className="col-span-full">
-                                <label htmlFor="bio" className="text-sm">Bio</label>
-                                <textarea id="bio" className={inputClass} defaultValue={""} />
+                            <div className="col-span-full sm:col-span-3">
+                                <label htmlFor="department" className="text-sm">Department</label>
+                                <select className='select w-full text-black' id="department">
+                                    <option value="marketing">Marketing</option>
+                                    <option className='webDevelopment'>Development</option>
+                                    <option value="account">Accounting</option>
+                                    <option value="hr">HR</option>
+                                </select>
+                            </div>
+                            <div className="col-span-full sm:col-span-3 ">
+                                <label htmlFor="status" className="text-sm ">Status</label>
+                                <select className='select text-black w-full' id="status">
+                                    <option>Permanent</option>
+                                    <option>Contract</option>
+                                    <option>Intern</option>
+                                </select>
+                            </div>
+                            <div className="col-span-full sm:col-span-3 ">
+                                <label htmlFor="position" className="text-sm ">Position</label>
+                                <select className='select text-black w-full' id="position">
+                                    <option>Marketing Manager</option>
+                                    <option value="">Web Developer</option>
+                                    <option value="">Junior Front-end Developer</option>
+                                    <option value="">Accountant</option>
+                                    <option value="">HR Manager</option>
+                                </select>
                             </div>
                             <div className="col-span-full">
                                 <label htmlFor="bio" className="text-sm">Photo</label>
                                 <div className="flex items-center space-x-2">
-                                    <img src="https://source.unsplash.com/30x30/?random" alt="" className="w-10 h-10 rounded-full dark:bg-gray-500 dark:bg-gray-700" />
-                                    <button type="button" className="px-4 py-2 border rounded-md dark:border-gray-100">Change</button>
+                                    <img src="https://source.unsplash.com/30x30/?random" alt="" className="w-12 h-12 rounded-full bg-gray-500 bg-gray-700" />
+                                    <button type="button" className="btn btn-outline">Change</button>
                                 </div>
                             </div>
                         </div>

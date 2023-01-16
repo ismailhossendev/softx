@@ -12,6 +12,7 @@ const Employee = () => {
                         <th>Name</th>
                         <th>Department</th>
                         <th>Status</th>
+                        <th>Position</th>
                         <th>Action</th>
                     </tr>
                 </thead>
