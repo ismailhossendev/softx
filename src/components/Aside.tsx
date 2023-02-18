@@ -24,7 +24,7 @@ const Aside = () => {
             <li><NavLink to="/employee" className='flex items-center'><RxIdCard className={normalClass} />Employee</NavLink></li>
             <li><NavLink to="add-employee" className='flex items-center mb-5'><RxPlusCircled className={normalClass} />Add Employee</NavLink></li>
             <div className="border-t pt-2">
-                <li><NavLink to="/jobs" className='flex items-center'><RxEnvelopeOpen className={normalClass} />Jobs</NavLink></li>
+                <li><NavLink to="/public/jobs" className='flex items-center'><RxEnvelopeOpen className={normalClass} />Jobs</NavLink></li>
                 <li><NavLink to="add-jobs" className='flex items-center'><RxPlusCircled className={normalClass} />Add Jobs</NavLink></li>
                 <li><NavLink to="/application" className='flex items-center'><RxEnvelopeOpen className={normalClass} />Application</NavLink></li>
             </div>
