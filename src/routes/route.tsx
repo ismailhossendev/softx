@@ -5,6 +5,7 @@ import AllEmployee from '../pages/AllEmployee';
 import AddEmployee from '../AddEmployee/AddEmployee';
 import Jobs from '../pages/Jobs';
 import Public from '../Layout/Public';
+import ApplyJob from "../components/jobs/ApplyJob";
 
 export const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
             {
                 path: "/public/jobs",
                 element: <Jobs />
+            },
+            {
+                path: "/public/job/1",
+                element: <ApplyJob />
             }
         ]
     }

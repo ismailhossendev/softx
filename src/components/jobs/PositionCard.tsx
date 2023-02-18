@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PositionCard = () => {
     return (
@@ -15,9 +16,13 @@ const PositionCard = () => {
             <div className="rounded-3xl z-50 h-1/2 bg-white absolute w-full p-5 flex justify-between flex-col">
                 <div className="">
                     <p className='text-gray-600'>Location: Remote</p>
-                    <p className='text-gray-600'>Job Description:</p>
+                    <p className='text-gray-600'>Job Description:
+                        <span className='overflow-hidden'>
+                            SoftX is looking for a Sr. Dot Net Developer to build software using languages ....
+                        </span>
+                    </p>
                 </div>
-                <button className='btn btn-primary w-60 block mx-auto'>Apply</button>
+                <Link to="/public/job/1" className='btn btn-primary bg-blue-400 border-0'>Apply</Link>
             </div>
         </div>
     );
