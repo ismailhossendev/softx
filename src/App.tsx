@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import AllEmployee from './pages/AllEmployee';
 import AddEmployee from './AddEmployee/AddEmployee';
+import Jobs from './pages/Jobs';
 
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
         {
           path: "/add-employee",
           element: <AddEmployee />
+        },
+        {
+          path: '/jobs',
+          element: <Jobs />
         }
       ]
     }
