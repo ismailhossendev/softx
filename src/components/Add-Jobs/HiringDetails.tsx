@@ -35,8 +35,20 @@ const HiringDetails = () => {
                     </label>
                     <input type="text" placeholder="9 AM to 5PM" className="input input-bordered w-full" />
                 </div>
+                <div className="form-control w-full ">
+                    <label className="label">
+                        <span className="label-text">Salary Range</span>
+                    </label>
+                    <input type="text" placeholder="Salary Range" className="input input-bordered w-full" />
+                </div>
+                <div className="form-control w-full ">
+                    <label className="label">
+                        <span className="label-text">Job DeadLine</span>
+                    </label>
+                    <input type="text" placeholder="15th February, 2050" className="input input-bordered w-full" />
+                </div>
             </div>
-            <div className="form-control w-full mt-3">
+            <div className="form-control w-full my-3">
                 <label className="label">
                     <span className="label-text">Job Details*</span>
                 </label>
