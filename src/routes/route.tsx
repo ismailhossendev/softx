@@ -6,6 +6,7 @@ import AddEmployee from '../AddEmployee/AddEmployee';
 import Jobs from '../pages/Jobs';
 import Public from '../Layout/Public';
 import ApplyJob from "../components/jobs/ApplyJob";
+import AddJobs from "../pages/AddJobs";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/jobs',
                 element: <Jobs />
+            },
+            {
+                path: '/add-jobs',
+                element: <AddJobs />
             }
         ]
     },

@@ -3,7 +3,7 @@ import OpenPositions from '../components/jobs/OpenPositions';
 
 const Jobs = () => {
     return (
-        <div className='bg-white px-40 md:px-20 p-0'>
+        <div className='bg-white lg:px-40 md:px-20 px-5 p-0'>
             <div className="grid md:grid-cols-2 mt-20">
                 <div className="md:p-10">
                     <h1 className='text-2xl font-bold'>SoftX, The Fastest Growing Software Company With 15 Years of Experience</h1>
