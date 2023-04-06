@@ -10,7 +10,9 @@ const CreatableInput = () => {
                 </label>
                 <CreatableSelect
                     isMulti
+                    onChange={(e) => console.log(e)}
                     placeholder='Responsibilities'
+                    name='responsibilities'
                 />
             </div>
             <div className="form-control w-full mt-3">
@@ -20,15 +22,17 @@ const CreatableInput = () => {
                 <CreatableSelect
                     placeholder='Requirements'
                     isMulti
+                    name='requirements'
                 />
             </div>
-            <div className="form-control w-full mt-3">
+            <div className="form-control w-full my-3">
                 <label className="label">
                     <span className="label-text">Other facilities and benefits *You Can Select Multiple*</span>
                 </label>
                 <CreatableSelect
                     placeholder='Other facilities and benefits'
                     isMulti
+                    name='otherFacilitiesAndBenefits'
                 />
             </div>
         </div>
